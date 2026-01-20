@@ -300,14 +300,18 @@ body {
   #logo-img { height: 34px; }
   .app-name {
     font-size: 10px;
-    margin-left: 30px;
+    margin-left: 15px;
     letter-spacing: 0.3px;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
   #logo1-img {
-    height: 34px;        /* smaller on mobile */
-  }
+    height: 34px;           /* smaller on mobile */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;           /* ensures it stays on top */
+}
 
 
   /* TV Nav - Compact */
