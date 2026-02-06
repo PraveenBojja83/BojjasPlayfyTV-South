@@ -289,6 +289,19 @@ body {
 
 /* MOBILE RESPONSIVE - Tablets & Phones */
 @media (max-width: 768px) {
+
+   #logo1-img {
+    height: 34px;           /* smaller on mobile */
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;           /* ensures it stays on top */
+}
+
+}
+
+
+@media (max-width: 768px) and (orientation:portrait) {
   body { overflow: auto; }
 
 
@@ -300,7 +313,7 @@ body {
   #logo-img { height: 34px; }
   .app-name {
     font-size: 10px;
-    margin-left: 15px;
+    margin-left: 30px;
     letter-spacing: 0.3px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -391,7 +404,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation:portrait){
   .app-name { font-size: 15px; }
   .cat-btn { padding: 4px 8px; font-size: 10px; }
   .channel { 
